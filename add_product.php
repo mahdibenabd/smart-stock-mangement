@@ -44,6 +44,11 @@ if (!isset($_SESSION['user_id'])) {
 					<h3 align="center"><font color="white">Add Product</font></h3>
 				</div>
 				<br>
+				<?php
+				if (isset($_GET['error']) && $_GET['error'] === 'id_exists') {
+    echo '<p style="color: red;">Error: This id is already exist. Please choose another one..</p>';
+}
+?>
 				<form class="form-horizontal" action="insertDB.php" method="post" >
 					<div class="control-group">
 						<label class="control-label"><font color="white">ID</label>

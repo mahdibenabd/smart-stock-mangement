@@ -33,10 +33,11 @@
 				<form class="form-horizontal" action="add_user.php" method="post" >
 					
 					<div class="control-group">
-						<label class="control-label">E-mail</label>
+						<label class="control-label">Tag id</label>
 						<div class="controls">
-							<input id="div_refresh" name="mail" type="text"  placeholder="" required>
+							<textarea name="id" id="getUID" placeholder="Please Scan your Card / Key Chain to display ID" rows="1" cols="1" required></textarea>
 						</div>
+					
 					</div>
 					
 					

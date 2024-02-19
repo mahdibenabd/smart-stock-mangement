@@ -12,10 +12,8 @@ if (!isset($_SESSION['user_id'])) {
     }
      
     if ( !empty($_POST)) {
-        // keep track post values
         $id = $_POST['id'];
          
-        // delete data
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "DELETE FROM tbl_products  WHERE id = ?";
@@ -46,7 +44,7 @@ if (!isset($_SESSION['user_id'])) {
 				<h3 align="center">Delete User</h3>
 			</div>
 
-			<form class="form-horizontal" action="user data delete page.php" method="post">
+			<form class="form-horizontal" action="product_data_delete_page.php" method="post">
 				<input type="hidden" name="id" value="<?php echo $id;?>"/>
 				<p class="alert alert-error">Are you sure to delete ?</p>
 				<div class="form-actions">

@@ -14,7 +14,6 @@
 		 
 		public static function connect()
 		{
-		   // One connection through whole application
 		   if ( null == self::$cont )
 		   {     
 			try
